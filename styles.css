@@ -1,6 +1,192 @@
-* {
-    border: 1px solid black;
-    margin: 0.5%;
-    box-sizing: border-box;
-    display: flex;
+body {
+  border: 1px solid black;
+  margin: 0.5%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.wrapper {
+  border: 1px solid black;
+  margin: 0.5%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  border: 1px solid black;
+  margin: 0.5%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+div,
+section,
+article,
+aside,
+footer,
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+  border: 1px solid black;
+  margin: 0.5%;
+}
+
+nav {
+  width: 50%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  border: 1px solid red;
+}
+
+header li:not(:first-child):before {
+  content: " | ";
+}
+
+.top-nav-list-item {
+  width: 23%;
+}
+
+form {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-col {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  display: block;
+}
+
+input[type="tel"] {
+  display: block;
+}
+
+.tm-box {
+  width: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-article,
+.mid-article {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-section {
+  width: 49%;
+}
+
+.top-section-button-box {
+  position: relative;
+  height: 2rem;
+}
+
+.top-section button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.mid-article aside {
+  width: 30%;
+}
+
+.mid-article-left-section {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid-article-left-section-top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid-article-left-section-bottom {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid-article-right-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mid-article-right-section-div {
+  width: 49%;
+}
+
+.footer-top-box-mid li:not(:last-child) {
+  border-bottom: 2px solid black;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top-box {
+  width: 32%;
 }
