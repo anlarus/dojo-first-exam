@@ -1,13 +1,24 @@
-body {
-  border: 1px solid black;
-  margin: 0.5%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0.5%;
   display: flex;
   font-family: "Fira-code", sans-serif;
+  font-weight: 300;
+  background: rgb(176, 170, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(176, 170, 180, 1) 0%,
+    rgba(212, 217, 220, 1) 50%,
+    rgba(236, 233, 227, 1) 100%
+  );
 }
 
 .wrapper {
-  border: 1px solid black;
   margin: 0.5%;
   display: flex;
   flex-flow: column nowrap;
@@ -18,8 +29,9 @@ body {
 header {
   color: white;
   background-color: black;
-  border: 1px solid black;
   margin: 0.5%;
+  padding: 0.5rem;
+  height: 15vh;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -39,6 +51,7 @@ i {
 
 p {
   font-size: 1rem;
+  margin: 2% 1%;
 }
 
 .heading {
@@ -48,7 +61,7 @@ p {
   align-items: center;
 }
 
-div,
+/* div,
 section,
 article,
 aside,
@@ -60,15 +73,23 @@ h2,
 h3,
 h4 {
   border: 1px solid yellow;
-  /* margin: 0.5%; */
-}
+  margin: 0.5%;
+} */
 
 h1 {
   font-size: 1.5rem;
 }
 
+h3 {
+  margin: 0.5%;
+}
+
+h4 {
+  margin: 1rem auto;
+}
+
 nav {
-  width: 60%;
+  width: 70%;
 }
 
 ul {
@@ -163,7 +184,7 @@ input[type="text"] {
 }
 
 input[type="tel"] {
-  width: 98%;
+  width: 100%;
 }
 
 input[type="submit"] {
@@ -189,7 +210,8 @@ button:hover {
 }
 
 input[type="submit"]:active,
-button:active, a:active{
+button:active,
+a:active {
   transform: scale(0.95);
 }
 
@@ -206,17 +228,13 @@ main {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
+  margin: 1% 0%;
 }
 
 .top-article,
 .mid-article {
-  background: rgb(176, 170, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(176, 170, 180, 1) 0%,
-    rgba(212, 217, 220, 1) 50%,
-    rgba(236, 233, 227, 1) 100%
-  );
+  margin: 1% 0%;
+
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -292,6 +310,7 @@ button {
 
 .mid-article-right-section {
   background-color: #fff;
+  padding: 3% 2%;
   height: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -315,6 +334,7 @@ button {
 
 footer {
   width: 100%;
+  margin: 1% 0%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -329,6 +349,7 @@ address {
 .footer-top {
   color: white;
   background: black;
+  padding: 1rem;
   width: 100%;
   display: flex;
   flex-flow: row nowrap;
@@ -345,7 +366,7 @@ address {
 }
 
 li:hover {
-  font-weight: 600;
+  font-weight: bold;
   background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -369,4 +390,9 @@ li:hover {
     rgba(212, 217, 220, 1) 50%,
     rgba(236, 233, 227, 1) 100%
   );
+}
+
+.footer-bottom,
+.footer-top {
+  margin: 1% 0%;
 }

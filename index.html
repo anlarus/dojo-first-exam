@@ -27,7 +27,7 @@
             <!-- <i class="fa-solid fa-laptop-code"></i> -->
             <img src="/assets/icon1.png" alt="we-collect-y-it-logo" />
           </div>
-          <h1>We  collect  your  IT</h1>
+          <h1>We collect your IT</h1>
         </div>
 
         <nav>
@@ -57,7 +57,7 @@
               corporis.
             </p>
             <div class="top-section-button-box">
-              <button>Learn more>></button>
+              <button id="btn" onclick="buttonHandler()">Learn more >></button>
             </div>
           </section>
           <aside class="top-section">
@@ -72,9 +72,9 @@
             <div class="mid-article-left-section-top">
               <div class="mid-article-left-section-box">
                 <div class="mid-article-left-section-box-header">
-                  <div class="heading">
+                  <div class="heading" onclick="clickHandler(this)">
                     <div class="icons"><i class="fa-solid fa-gear"></i></div>
-                    <h4>Safe & Secure</h4>
+                    <h3>Safe & Secure</h3>
                   </div>
                 </div>
                 <div class="mid-article-left-section-box-contain">
@@ -87,11 +87,11 @@
               </div>
               <div class="mid-article-left-section-box">
                 <div class="mid-article-left-section-box-header">
-                  <div class="heading">
+                  <div class="heading" onclick="clickHandler(this)">
                     <div class="icons">
                       <i class="fa-solid fa-earth-americas"></i>
                     </div>
-                    <h4>Eco-friendly</h4>
+                    <h3>Eco-friendly</h3>
                   </div>
                 </div>
                 <div class="mid-article-left-section-box-contain">
@@ -104,11 +104,11 @@
               </div>
               <div class="mid-article-left-section-box">
                 <div class="mid-article-left-section-box-header">
-                  <div class="heading">
+                  <div class="heading" onclick="clickHandler(this)">
                     <div class="icons">
                       <i class="fa-solid fa-chart-simple"></i>
                     </div>
-                    <h4>Helping others</h4>
+                    <h3>Helping others</h3>
                   </div>
                 </div>
                 <div class="mid-article-left-section-box-contain">
@@ -140,7 +140,7 @@
                 deleniti, possimus maxime id natus soluta itaque consequuntur.
               </p>
               <div class="links">
-                <a href="#">Read more ></a>
+                <a href="#" onmouseover="readHandler()">Read more ></a>
               </div>
             </div>
             <div class="mid-article-right-section-div">
@@ -156,7 +156,7 @@
         <div class="footer-top">
           <div class="footer-top-box">
             <div class="footer-top-box-top">
-              <h3>Contact Us</h3>
+              <h4>Contact Us</h3>
               <ul>
                 <li>We collect your IT</li>
                 <li>Leading computers Ltd</li>
@@ -169,7 +169,7 @@
             </div>
           </div>
           <div class="footer-top-box">
-            <h3>Support and help</h3>
+            <h4>Support and help</h3>
             <nav class="bottom-nav-list">
               <ul>
                 <li>About Us</li>
@@ -181,7 +181,7 @@
             </nav>
           </div>
           <div class="footer-top-box">
-            <h3>Want us to get in touch with you?</h3>
+            <h4>Want us to get in touch with you?</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
               eveniet harum?
@@ -189,11 +189,11 @@
             <form action="/POST">
               <div class="form-col-left">
                 <div class="form-row">
-                  <input type="text" placeholder="Name"/>
-                  <input type="text" placeholder="Email"/>
+                  <input type="text" placeholder="Name" id="uName" />
+                  <input type="text" placeholder="Email" />
                 </div>
                 <div class="user-input">
-                  <input type="tel" class="phone-num" placeholder="Phone no" />
+                  <input type="tel" class="phone-num" placeholder="Phone n°" />
                 </div>
               </div>
               <div class="form-col-right">
@@ -204,11 +204,14 @@
         </div>
         <div class="footer-bottom">
           <p>
-            We collect your IT is a project set up by Leading Computers Ltd and landed by Anna Larus.
-            Copyright © 2022. All rights reserved
+            We collect your IT - is a project set up by Leading Computers Ltd
+            and landed by Anna Larus. Copyright ©
+            <span id="year" onclick="yearIncreaser()">2022</span> . All rights
+            reserved
           </p>
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
